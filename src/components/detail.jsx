@@ -9,23 +9,21 @@ export const Details = () => {
     React.useEffect(() => {
         fetch(`https://api.tvmaze.com/shows/${id}?embed=cast`)
         .then(res => res.json())
-        .then(data => useDetail(data))
+        .then(data => {useDetail(data)})
         .catch(err => console.log(err))
     } , [])
 
-    const films = Object.values(detail)
-
     return (
         <>
-           <h1> Titre : {films[2]}</h1>
-           <h2> Notes : {films[13]?.average} / 10</h2>
-           <h3> Types : {films[5]}</h3>
-           <img src={`${films[19]?.original ? films[19]?.original : img }`}/>
-           <p>{films[20]}</p>
+           <h1> Titre : {detail.name}</h1>
+           { <h2> Notes : {detail.rating?.average} / 10</h2> }
+           {<h3> Types : {detail.genres}</h3> }
+           {<img src={`${detail.image?.original ? detail.image?.original : img }`}/> }
+           { <p>{detail.summary}</p> }
            <h2>Castings</h2>
            <div className="trait"></div>
-           <div>
-            {films[23]?.cast.map((p , index)=> {
+           {<div>
+            {detail._embedded?.cast.map((p , index)=> {
                 return (
                     <div key={index}>
                     <h3 >{p.person.name}</h3> 
@@ -33,7 +31,7 @@ export const Details = () => {
                     </div>
                 )
             })}
-           </div>
+           </div> }
        </>
     )
 }
