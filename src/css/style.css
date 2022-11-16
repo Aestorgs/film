@@ -1,3 +1,7 @@
 .list{
     display: grid;
 }
+
+:link {
+    display: block;
+}
