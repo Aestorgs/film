@@ -2,12 +2,13 @@ import React, { useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import { Search } from "./components/search";
-import { Details } from "./components/detail";
+import { Detail } from "./components/detail";
 import { Login } from "./components/login";
 import { Register } from "./components/register";
 import { Home } from "./components/home";
 import { Favoris } from "./components/favoris";
 import { Layout } from "./components/layout";
+import { Details } from "./components/details";
 const root = document.getElementById("root");
 
 const app = createRoot(root);
@@ -23,7 +24,7 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/:id" element={<Details />} />
+          <Route path="/:id" element={<Detail />} />
           <Route path="/" element={<Search />} />
           <Route path="/" element={<Layout />}>
             <Route path="/favoris" element={<Favoris />} />

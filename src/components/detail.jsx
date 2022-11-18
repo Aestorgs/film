@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useState } from "react-router-dom";
 import img from "../img/imgNotFound.png";
-export const Details = () => {
+export const Detail = () => {
   const [detail, useDetail] = React.useState({});
   const { id } = useParams();
 

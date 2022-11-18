@@ -71,7 +71,7 @@ export const Home = () => {
               <div>
                 <button
                   disabled={
-                    favoris.find((f) => f.shows.showsId === p.show.id) ? true : false
+                    favoris.find((f) => f.shows === p.show.id ||  f.shows.showsId === p.show.id) ? true : false
                   }
                   onClick={() => shows(p)}
                 >
