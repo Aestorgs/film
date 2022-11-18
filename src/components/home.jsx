@@ -26,13 +26,13 @@ export const Home = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          showsId: p.show.id,
+          shows: p.show.id,
           users: me,
         }),
       });
       if (res.status === 201) {
         setMessage({ id: p.show.id, message: "add the film " });
-        setFavoris((prev) => [...prev, { showsId: p.show.id }]);
+        setFavoris((prev) => [...prev, { shows: p.show.id }]);
       } else {
         res.status === 400 && setMessage("Some error occured");
       }
@@ -71,7 +71,7 @@ export const Home = () => {
               <div>
                 <button
                   disabled={
-                    favoris.find((f) => f.showsId === p.show.id) ? true : false
+                    favoris.find((f) => f.shows.showsId === p.show.id) ? true : false
                   }
                   onClick={() => shows(p)}
                 >

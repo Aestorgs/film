@@ -14,7 +14,7 @@ export const Favoris = () => {
         const show = await Promise.all(
           shows.favoris.map((fav) => {
             return fetch(
-              `https://api.tvmaze.com/shows/${fav.showsId}?embed=cast`
+              `https://api.tvmaze.com/shows/${fav.shows.showsId}?embed=cast`
             )
               .then((res) => res.json())
               .then((data) => [data, fav.id])
