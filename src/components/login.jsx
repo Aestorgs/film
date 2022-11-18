@@ -24,7 +24,7 @@ export const Login = () => {
         }),
       });
       const data = await res.json();
-      console.log(data.users);
+      console.log("users" ,data.users);
       if (res.status === 200) {
         navigate("/home");
         setMe(data.users);
