@@ -17,7 +17,7 @@ export const Serie = () => {
 
   return (
     <>
-      <h1>Serie</h1>
+      <h1>Serie {data[0]?.season}</h1>
       <div className="list">
         {data.map((p, index) => {
           return (
