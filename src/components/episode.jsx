@@ -28,7 +28,7 @@ export const Episodes = () => {
         }),
       });
       if (res.status === 201) {
-        setMessage({ id: data.id, message: "vue" });
+        setMessage({ id: data.id, message: " episode vue" });
       } else {
         res.status === 400 && setMessage("Some error occured");
       }

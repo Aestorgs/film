@@ -28,7 +28,7 @@ export const Saison = () => {
         }),
       });
       if (res.status === 201) {
-        setMessage({ id: p.id, message: "vue" });
+        setMessage({ id: p.id, message: "saison vue" });
       } else {
         res.status === 400 && setMessage("Some error occured");
       }
@@ -39,14 +39,16 @@ export const Saison = () => {
 
   return (
     <>
-      <h1>Saison</h1>
       <div className="list">
         {data.map((p, index) => {
+          console.log(p)
           return (
             <div key={index}>
+               <h1>Saison {p.number}</h1>
               <Link to={`${p.id}`}>
                 <img src={p.image?.medium || img} />
               </Link>
+              <p>{p.summary}</p>
               <button onClick={() => saisonSerie(p)}>vue</button>
               {p.id === message.id && message.message}
             </div>
