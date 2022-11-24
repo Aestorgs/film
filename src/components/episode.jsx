@@ -41,7 +41,6 @@ export const Episodes = () => {
     <>
       <h1>Details Episode {data.number}</h1>
       <h2>{data.name}</h2>
-      {console.log(data)}
       <div className="list">
         <div>
           <img src={data.image?.medium || img} />
