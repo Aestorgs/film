@@ -23,7 +23,7 @@ export const Saison = () => {
         },
         body: JSON.stringify({
           saison: p.number,
-          vue: false,
+          vue: true,
           shows: p.id,
         }),
       });

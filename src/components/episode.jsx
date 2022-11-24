@@ -23,7 +23,7 @@ export const Episodes = () => {
         },
         body: JSON.stringify({
           episode: data.id,
-          vue: false,
+          vue: true,
           saison: data.season,
         }),
       });
