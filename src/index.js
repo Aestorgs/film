@@ -10,6 +10,8 @@ import { Favoris } from "./components/favoris";
 import { Layout } from "./components/layout";
 import { Details } from "./components/details";
 import { Serie } from "./components/serie";
+import { Episodes } from "./components/episode";
+
 const root = document.getElementById("root");
 
 const app = createRoot(root);
@@ -31,9 +33,11 @@ const App = () => {
             <Route path="/favoris" element={<Favoris />} />
             <Route path="/home" element={<Home />} />
             <Route path="/home/:id" element={<Details />} />
-            <Route path="/home/:id/:id" element={<Serie />} />
+            <Route path="/home/:id/:id" element={<Serie />}/>
+            <Route path="/home/:id/:id/:id" element={<Episodes/>} />
             <Route path="/favoris/:id" element={<Details />} />
             <Route path="/favoris/:id/:id" element={<Serie />} />
+            <Route path="/favoris/:id/:id/:id" element={<Episodes/>} />
           </Route>
         </Routes>
       </users.Provider>
