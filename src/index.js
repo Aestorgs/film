@@ -9,7 +9,7 @@ import { Home } from "./components/home";
 import { Favoris } from "./components/favoris";
 import { Layout } from "./components/layout";
 import { Details } from "./components/details";
-import { Episode } from "./components/episode";
+import { Serie } from "./components/serie";
 const root = document.getElementById("root");
 
 const app = createRoot(root);
@@ -31,9 +31,9 @@ const App = () => {
             <Route path="/favoris" element={<Favoris />} />
             <Route path="/home" element={<Home />} />
             <Route path="/home/:id" element={<Details />} />
-            <Route path="/home/:id/:id" element={<Episode />} />
+            <Route path="/home/:id/:id" element={<Serie />} />
             <Route path="/favoris/:id" element={<Details />} />
-            <Route path="/favoris/:id/:id" element={<Episode />} />
+            <Route path="/favoris/:id/:id" element={<Serie />} />
           </Route>
         </Routes>
       </users.Provider>
