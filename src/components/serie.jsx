@@ -1,6 +1,5 @@
 import React from "react";
 import img from "../img/imgNotFound.png";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 
@@ -23,9 +22,9 @@ export const Serie = () => {
           return (
             <div key={index}>
                   <h3>Episodes {p.number}</h3>
-                  <Link to={`${p.id}`}><img src={p.image?.medium || img} /></Link>
+                  <img src={p.image?.medium || img} />
                   <h2>{p.name}</h2>
-                  
+                  <p>{p.summary}</p>
             </div>
           );
         })}
