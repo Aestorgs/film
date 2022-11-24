@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../img/imgNotFound.png";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export const Saison = () => {
     const {id} = useParams()
@@ -21,7 +21,7 @@ export const Saison = () => {
         {data.map((p, index) => {
           return (
             <div key={index}>
-              <img src={p.image?.medium || img} />
+              <Link to={`${p.id}`}><img src={p.image?.medium || img} /></Link>
             </div>
           );
         })}
