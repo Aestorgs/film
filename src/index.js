@@ -30,6 +30,7 @@ const App = () => {
             <Route path="/favoris" element={<Favoris />} />
             <Route path="/home" element={<Home />} />
             <Route path="/home/:id" element={<Details />} />
+            <Route path="/favoris/:id" element={<Details />} />
           </Route>
         </Routes>
       </users.Provider>

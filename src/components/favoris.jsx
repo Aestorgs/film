@@ -1,6 +1,7 @@
 import React from "react";
 import { users } from "..";
 import img from "../img/imgNotFound.png";
+import { Link } from "react-router-dom";
 
 export const Favoris = () => {
   const { me } = React.useContext(users);
@@ -49,6 +50,7 @@ export const Favoris = () => {
           return (
             <div key={index}>
               <img src={p[0].image?.medium || img} />
+              <Link to={`${p[0].id}`}>{p[0].name}</Link>
               <div>
                 <button onClick={() => Delete(p[1])}>delete the film</button>
                 <div className="message">
