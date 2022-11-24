@@ -41,7 +41,6 @@ export const Saison = () => {
     <>
       <div className="list">
         {data.map((p, index) => {
-          console.log(p)
           return (
             <div key={index}>
                <h1>Saison {p.number}</h1>
