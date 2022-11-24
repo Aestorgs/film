@@ -20,7 +20,6 @@ export const Serie = () => {
       <h1>Serie</h1>
       <div className="list">
         {data.map((p, index) => {
-                 console.log(p)
           return (
             <div key={index}>
                   <h3>Episodes {p.number}</h3>
