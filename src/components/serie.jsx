@@ -17,13 +17,13 @@ export const Serie = () => {
   return (
     <>
       <h1>Serie {data[0]?.season}</h1>
-      <div className="list">
+      <div className="listserie">
         {data.map((p, index) => {
           return (
             <div key={index}>
-                  <h3>Episodes {p.number}</h3>
-                  <Link to={`${p.id}`}><img src={p.image?.medium || img} /></Link>
-                  <h2>{p.name}</h2>
+                  <h3 className="h3serie">Episodes {p.number}</h3>
+                  <Link to={`${p.id}`}><img className="imgserie" src={p.image?.medium || img} /></Link>
+                  <h2 className="h2serie">{p.name}</h2>
             </div>
           );
         })}

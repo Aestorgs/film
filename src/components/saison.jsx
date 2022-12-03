@@ -39,16 +39,15 @@ export const Saison = () => {
 
   return (
     <>
-      <div className="list">
+      <div className="listSaison">
         {data.map((p, index) => {
           return (
             <div key={index}>
-               <h1>Saison {p.number}</h1>
+               <h1 className="h1Saison">Saison {p.number}</h1>
               <Link to={`${p.id}`}>
-                <img src={p.image?.medium || img} />
+                <img className="imgSaison" src={p.image?.medium || img} />
               </Link>
-              <p>{p.summary}</p>
-              <button onClick={() => saisonSerie(p)}>vue</button>
+              <button className="buttonSaison" onClick={() => saisonSerie(p)}>vue</button>
               {p.id === message.id && message.message}
             </div>
           );

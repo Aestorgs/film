@@ -1,7 +1,159 @@
 .list{
-    display: grid;
+    max-width: 80rem;
+    margin-left: 3.3rem;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imgSearch{
+    padding: 10px;
+}
+
+.aSearch{
+    text-align: center;
+}
+
+.listHome{
+    max-width: 80rem;
+    margin-left: 3.3rem;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.homeButton{
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+
+.imgHome{
+    padding: 10px;
+}
+
+.aHome{
+    text-align: center;
+}
+
+
+.listFavoris{
+    max-width: 80rem;
+    margin-left: 3.3rem;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imgFavoris{
+    padding: 10px;
+}
+
+
+.aFavoris{
+    text-align: center;
+}
+
+.favorisButton{
+    margin-top: 10px;
+    margin-left: 58px;
+}
+
+
+.listSaison{
+    max-width: 80rem;
+    margin-left: 3.3rem;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.h1Saison{
+    text-align: center;
+}
+
+.imgSaison{
+    padding: 10px;
+}
+
+
+.buttonSaison{
+    margin-left: 96px;
+}
+
+.detailsCastings{
+    max-width: 80rem;
+    margin-left: 3.3rem;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imgDetails{
+    padding: 10px;
+}
+
+.imgsDetails{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pDetails{
+    text-align: center;
+}
+
+.h2Details{
+    text-align: center;
+    padding: 10px;
+    margin-left: -45px;
+}
+
+.persoDetails{
+    text-align: center;
+    margin-left: -43px;
+}
+
+
+.listserie{
+    max-width: 80rem;
+    margin-left: 3.3rem;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.imgserie{
+    padding: 10px;
+}
+
+.h3serie{
+    text-align: center;
+}
+
+.h2serie{
+    text-align: center;
+}
+
+.h2Episode{
+    text-align: center;
+}
+
+.imgEpisode{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonEpisode{
+    margin-left: 37.5rem;
 }
 
 :link {
     display: block;
+    
 }

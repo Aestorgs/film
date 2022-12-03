@@ -7,6 +7,7 @@ export const Favoris = () => {
   const { me } = React.useContext(users);
   const [message, setMessage] = React.useState("");
   const [data, setData] = React.useState([]);
+  const [user, setUser] = React.useState([]);
 
   React.useEffect(() => {
     fetch(`http://localhost:3000/users/favoris/${me}`)
@@ -33,7 +34,7 @@ export const Favoris = () => {
         method: "DELETE",
       });
       if (res.status === 200) {
-        setMessage({ id: p, message: "delete the film " });
+        setMessage({ id: p, message: "Le film à été supprimer  " });
       } else {
         res.status === 400 && setMessage("Some error occured");
       }
@@ -42,17 +43,24 @@ export const Favoris = () => {
     }
   };
 
+  React.useEffect(() => {
+    fetch(`http://localhost:3000/users/favoris/${me}`)
+      .then((res) => res.json())
+      .then((data) => setUser(data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <>
-     <h1>Favoris</h1>
-      <div className="list">
+     <h1>Favoris de {user.firstname} {user.lastname}</h1>
+      <div className="listFavoris">
         {data.map((p, index) => {
           return (
             <div key={index}>
-              <img src={p[0].image?.medium || img} />
-              <Link to={`${p[0].id}`}>{p[0].name}</Link>
+              <img className="imgFavoris" src={p[0].image?.medium || img} />
+              <Link className="aFavoris" to={`${p[0].id}`}>{p[0].name}</Link>
               <div>
-                <button onClick={() => Delete(p[1])}>delete the film</button>
+                <button className="favorisButton" onClick={() => Delete(p[1])}>Supprimer le film</button>
                 <div className="message">
                   {p[1] === message.id && message.message}
                 </div>

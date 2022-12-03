@@ -19,17 +19,16 @@ export const Detail = () => {
       <h1> Titre : {detail.name}</h1>
       {<h2> Notes : {detail.rating?.average} / 10</h2>}
       {<h3> Types : {detail.genres}</h3>}
-      {<img src={`${detail.image?.original ? detail.image?.original : img}`} />}
-      {<p>{detail.summary}</p>}
-      <h2>Castings</h2>
-      <div className="trait"></div>
+      {<img  className="imgsDetails" src={`${detail.image?.original ? detail.image?.original : img}`} />}
+      {<p className="pDetails">{detail.summary}</p>}
+      <h2 className="h2Details">Castings</h2>
       {
-        <div>
+        <div className="detailsCastings">
           {detail._embedded?.cast.map((p, index) => {
             return (
               <div key={index}>
-                <h3>{p.person.name}</h3>
-                <img
+                <h3 className="persoDetails">{p.person.name}</h3>
+                <img className="imgDetails"
                   src={`${
                     p.person.image?.medium ? p.person.image?.medium : img
                   }`}

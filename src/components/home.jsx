@@ -9,6 +9,7 @@ export const Home = () => {
   const { me } = React.useContext(users);
   const [message, setMessage] = React.useState("");
   const [favoris, setFavoris] = React.useState([]);
+  const [user, setUser] = React.useState([]);
 
   const films = (e) => {
     e.preventDefault();
@@ -31,7 +32,7 @@ export const Home = () => {
         }),
       });
       if (res.status === 201) {
-        setMessage({ id: p.show.id, message: "add the film " });
+        setMessage({ id: p.show.id, message: "Le film à été ajouté " });
         setFavoris((prev) => [...prev, { shows: p.show.id }]);
       } else {
         res.status === 400 && setMessage("Some error occured");
@@ -48,10 +49,18 @@ export const Home = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  useEffect(() => {
+    fetch(`http://localhost:3000/users/favoris/${me}`)
+      .then((res) => res.json())
+      .then((data) => setUser(data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <>
-      <h1>Accueil</h1>
+      <h1>Bienvenue : {user.firstname} {user.lastname} </h1>
       <Link to="/favoris">Favoris</Link>
+      <h2>Rechercher le film ou serie </h2>
       <form onSubmit={films}>
         <input
           value={values}
@@ -60,22 +69,22 @@ export const Home = () => {
         />
         <button>Search</button>
       </form>
-      <div className="list">
+      <div className="listHome">
         {search.map((p, index) => {
           return (
             <div key={index}>
-              <img
+              <img className="imgHome"
                 src={`${p.show.image?.medium ? p.show.image?.medium : img}`}
               />
-              <Link to={`${p.show.id}`}>{p.show.name}</Link>
+              <Link className="aHome" to={`${p.show.id}`}>{p.show.name}</Link>
               <div>
-                <button
+                <button className="homeButton"
                   disabled={
                     favoris.find((f) => f.shows === p.show.id ||  f.shows.showsId === p.show.id) ? true : false
                   }
                   onClick={() => shows(p)}
                 >
-                  add films
+                  Ajouter le film
                 </button>
                 {p.show.id === message.id && message.message}
               </div>

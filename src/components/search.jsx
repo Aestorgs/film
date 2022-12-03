@@ -16,9 +16,10 @@ export const Search = () => {
 
   return (
     <>
-      <h1>Accueil</h1>
+      <h1>Accueil film</h1>
       <Link to="/login">login</Link>
       <Link to="/register">register</Link>
+      <h2>Rechercher le film ou serie</h2>
       <form onSubmit={films}>
         <input
           value={values}
@@ -31,10 +32,10 @@ export const Search = () => {
         {search.map((p, index) => {
           return (
             <div key={index}>
-              <img
+              <img className="imgSearch"
                 src={`${p.show.image?.medium ? p.show.image?.medium : img}`}
               />
-              <Link to={`${p.show.id}`}>{p.show.name}</Link>
+              <Link className="aSearch" to={`${p.show.id}`}>{p.show.name}</Link>
             </div>
           );
         })}

@@ -40,15 +40,13 @@ export const Episodes = () => {
   return (
     <>
       <h1>Details Episode {data.number}</h1>
-      <h2>{data.name}</h2>
-      <div className="list">
+      <h2 className="h2Episode">{data.name}</h2>
         <div>
-          <img src={data.image?.medium || img} />
+          <img className="imgEpisode" src={data.image?.medium || img} />
           <p>{data.summary}</p>
-          <button onClick={() => episodesSaison()}>vue</button>
+          <button className="buttonEpisode" onClick={() => episodesSaison()}>vue</button>
              {data.id === message.id && message.message}
         </div>
-      </div>
     </>
   );
 };
