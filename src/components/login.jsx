@@ -37,6 +37,7 @@ export const Login = () => {
   };
   return (
     <>
+    <h1 className="h1">Login</h1>
       <form onSubmit={handleSubmit} method="post">
         <label> Email </label>
         <input

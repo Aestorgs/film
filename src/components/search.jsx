@@ -19,7 +19,7 @@ export const Search = () => {
       <h1>Accueil film</h1>
       <Link to="/login">login</Link>
       <Link to="/register">register</Link>
-      <h2>Rechercher le film ou serie</h2>
+      <h2 className="search">Rechercher le film ou serie</h2>
       <form onSubmit={films}>
         <input
           value={values}

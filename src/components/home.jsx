@@ -60,7 +60,7 @@ export const Home = () => {
     <>
       <h1>Bienvenue : {user.firstname} {user.lastname} </h1>
       <Link to="/favoris">Favoris</Link>
-      <h2>Rechercher le film ou serie </h2>
+      <h2 className="search">Rechercher le film ou serie </h2>
       <form onSubmit={films}>
         <input
           value={values}

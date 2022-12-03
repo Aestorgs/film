@@ -36,6 +36,7 @@ export const Register = () => {
 
   return (
     <>
+     <h1 className="h1">Register</h1>
       <form onSubmit={handleSubmit} method="post">
         <label> Firstname </label>
         <input
