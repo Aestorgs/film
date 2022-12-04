@@ -1,223 +1,344 @@
-.list{
-    max-width: 80rem;
-    margin-left: 3.3rem;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
+.list {
+  max-width: 80rem;
+  margin-left: 3.3rem;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.imgSearch{
-    padding: 10px;
+.imgSearch {
+  padding: 10px;
 }
 
-.aSearch{
-    text-align: center;
+.aSearch {
+  text-align: center;
 }
 
-.listHome{
-    max-width: 80rem;
-    margin-left: 3.3rem;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
+.listHome {
+  max-width: 80rem;
+  margin-left: 3.3rem;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.homeButton{
-    margin-top: 10px;
-    margin-left: 65px;
+.homeButton {
+  margin-top: 10px;
+  margin-left: 65px;
 }
 
-
-.imgHome{
-    padding: 10px;
+.imgHome {
+  padding: 10px;
 }
 
-.aHome{
-    text-align: center;
+.aHome {
+  text-align: center;
 }
 
-
-.listFavoris{
-    max-width: 80rem;
-    margin-left: 3.3rem;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
+.listFavoris {
+  max-width: 80rem;
+  margin-left: 3.3rem;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.imgFavoris{
-    padding: 10px;
+.imgFavoris {
+  padding: 10px;
 }
 
-
-.aFavoris{
-    text-align: center;
+.aFavoris {
+  text-align: center;
 }
 
-.favorisButton{
-    margin-top: 10px;
-    margin-left: 58px;
+.favorisButton {
+  margin-top: 10px;
+  margin-left: 58px;
 }
 
-
-.listSaison{
-    max-width: 80rem;
-    margin-left: 3.3rem;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
+.listSaison {
+  max-width: 80rem;
+  margin-left: 3.3rem;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.h1Saison{
-    text-align: center;
+.h1Saison {
+  text-align: center;
 }
 
-.imgSaison{
-    padding: 10px;
+.imgSaison {
+  padding: 10px;
 }
 
-
-.buttonSaison{
-    margin-left: 96px;
+.buttonSaison {
+  margin-left: 96px;
 }
 
-.detailsCastings{
-    max-width: 80rem;
-    margin-left: 3.3rem;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
+.detailsCastings {
+  max-width: 80rem;
+  margin-left: 3.3rem;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.imgDetails{
-    padding: 10px;
+.imgDetails {
+  padding: 10px;
 }
 
-.imgsDetails{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.imgsDetails {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.pDetails{
-    text-align: center;
+.pDetails {
+  text-align: center;
 }
 
-.h2Details{
-    text-align: center;
-    padding: 10px;
-    margin-left: -45px;
+.h2Details {
+  text-align: center;
+  padding: 10px;
+  margin-left: -45px;
 }
 
-.persoDetails{
-    text-align: center;
-    margin-left: -43px;
+.persoDetails {
+  text-align: center;
+  margin-left: -43px;
 }
 
-
-.listserie{
-    max-width: 80rem;
-    margin-left: 3.3rem;
-    margin-right: auto;
-    display: flex;
-    flex-flow: row wrap;
+.listserie {
+  max-width: 80rem;
+  margin-left: 3.3rem;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.imgserie{
-    padding: 10px;
+.imgserie {
+  padding: 10px;
 }
 
-.h3serie{
-    text-align: center;
+.h3serie {
+  text-align: center;
 }
 
-.h2serie{
-    text-align: center;
+.h2serie {
+  text-align: center;
 }
 
-.h2Episode{
-    text-align: center;
+.h2Episode {
+  text-align: center;
 }
 
-.imgEpisode{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.imgEpisode {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.buttonEpisode{
-    margin-left: 37.5rem;
+.buttonEpisode {
+  margin-left: 37.5rem;
 }
 
 :link {
-    display: block;
-    
+  display: block;
 }
 
-.search{
-    text-align: center;
+.search {
+  text-align: center;
 }
 
-
-.h1{
-    text-align: center;
+.h1 {
+  text-align: center;
 }
 
-form{
-text-align: center;
+form {
+  text-align: center;
 }
 
+@media screen and (min-width: 280px) {
+  .buttonEpisode {
+    margin-left: 6.5rem;
+  }
+}
 
-@media screen and (max-width: 500px) {
-    .detailsCastings{
-        max-width: 80rem;
-        margin-left: 0.7rem;
-        margin-right: auto;
-        display: flex;
-        flex-flow: row wrap;
-    }
+@media screen and (min-width: 360px) {
+  .buttonEpisode {
+    margin-left: 9.5rem;
+  }
+}
 
-    .listSaison {
-        max-width: 80rem;
-        flex-flow: wrap;
-        margin-left: 0.7rem;
-        margin-right: auto;
-        display: flex;
-    }
+@media screen and (min-width: 375px) {
+  .buttonEpisode {
+    margin-left: 9.5rem;
+  }
+}
 
-    .listFavoris {
-        max-width: 80rem;
-        flex-flow: wrap;
-        margin-left: 0.7rem;
-        margin-right: auto;
-        display: flex;
-    }
+@media screen and (min-width: 390px) {
+  .buttonEpisode {
+    margin-left: 10.5rem;
+  }
+}
 
-    .listHome {
-        max-width: 80rem;
-        flex-flow: wrap;
-        margin-left: 0.7rem;
-        margin-right: auto;
-        display: flex;
-    }
+@media screen and (min-width: 400px) {
+  .detailsCastings {
+    max-width: 80rem;
+    margin-left: 4.7rem;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
 
-    .list {
-        max-width: 80rem;
-        flex-flow: wrap;
-        margin-left: 0.7rem;
-        margin-right: auto;
-        display: flex;
-    }
+  .listSaison {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 4.7rem;
+    margin-right: auto;
+    display: flex;
+  }
 
-    .listserie{
-        max-width: 80rem;
-        flex-flow: wrap;
-        margin-left: 0.7rem;
-        margin-right: auto;
-        display: flex;
+  .listFavoris {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 4.7rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .listHome {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 4.7rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .list {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 4.7rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .listserie {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 3.7rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .buttonEpisode {
+    margin-left: 11rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .detailsCastings {
+    max-width: 80rem;
+    margin-left: 0.7rem;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .listSaison {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 0.7rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .listFavoris {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 0.7rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .listHome {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 0.7rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .list {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 0.7rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .listserie {
+    max-width: 80rem;
+    flex-flow: wrap;
+    margin-left: 6.9rem;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .buttonEpisode {
+    margin-left: 14rem;
+  }
+}
+
+@media screen and (min-width: 540px){
+.buttonEpisode {
+    margin-left: 15rem;
+}
+}
+
+@media screen and (min-width: 737px) {
+    .buttonEpisode {
+      margin-left: 21rem;
     }
   }
+
+@media screen and (min-width: 768px) {
+  .buttonEpisode {
+    margin-left: 22rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .buttonEpisode {
+    margin-left: 24rem;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  .buttonEpisode {
+    margin-left: 26.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .buttonEpisode {
+    margin-left: 29.5rem;
+  }
+}
+
+@media screen and (min-width: 1269px){
+    .buttonEpisode {
+        margin-left: 37.5rem;
+    }
+    }
+
+@media screen and (min-width: 1280px){
+.buttonEpisode {
+    margin-left: 37.5rem;
+}
+}
