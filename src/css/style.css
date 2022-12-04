@@ -332,6 +332,55 @@ form {
 }
 
 @media screen and (min-width: 1269px){
+    
+    .detailsCastings {
+        max-width: 80rem;
+        margin-left: 3.3rem;
+        margin-right: auto;
+        display: flex;
+        flex-flow: row wrap;
+      }
+    
+      .listSaison {
+        max-width: 80rem;
+        flex-flow: wrap;
+        margin-left: 3.3rem;
+        margin-right: auto;
+        display: flex;
+      }
+    
+      .listFavoris {
+        max-width: 80rem;
+        flex-flow: wrap;
+        margin-left: 3.3rem;
+        margin-right: auto;
+        display: flex;
+      }
+    
+      .listHome {
+        max-width: 80rem;
+        flex-flow: wrap;
+        margin-left: 3.3rem;
+        margin-right: auto;
+        display: flex;
+      }
+    
+      .list {
+        max-width: 80rem;
+        flex-flow: wrap;
+        margin-left: 3.3rem;
+        margin-right: auto;
+        display: flex;
+      }
+    
+      .listserie {
+        max-width: 80rem;
+        flex-flow: wrap;
+        margin-left: 3.3rem;
+        margin-right: auto;
+        display: flex;
+      }
+    
     .buttonEpisode {
         margin-left: 37.5rem;
     }
