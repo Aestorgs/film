@@ -2,6 +2,8 @@ import React from "react";
 import img from "../img/imgNotFound.png";
 import { useParams } from "react-router-dom";
 
+// afficher les episodes 
+
 export const Episodes = () => {
   const { id } = useParams();
   const [data, setData] = React.useState({});
