@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+
+// affichage pour enregister c'est donnée
 export const Register = () => {
   const [firstname, setFirstname] = React.useState("");
   const [lastname, setLastname] = React.useState("");
