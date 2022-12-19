@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams , useState } from "react-router-dom";
 import img from'../img/imgNotFound.png'
+
+// afficher le detail d'un film 
 export const Details = () => {
 
     const [detail , useDetail] = React.useState({})
