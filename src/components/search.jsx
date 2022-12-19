@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/style.css";
 import img from "../img/imgNotFound.png";
+
+//rechercher un film
 export const Search = () => {
   const [search, useSearch] = React.useState([]);
   const [values, useValues] = React.useState("");
