@@ -5,6 +5,7 @@ export const Detail = () => {
   const [detail, useDetail] = React.useState({});
   const { id } = useParams();
 
+  // detail des films 
   React.useEffect(() => {
     fetch(`https://api.tvmaze.com/shows/${id}?embed=cast`)
       .then((res) => res.json())
