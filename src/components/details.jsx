@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useParams, useState } from "react-router-dom";
 import img from "../img/imgNotFound.png";
 import { Saison } from "./saison";
+
+//detail du films quand utilisateur il est connecter 
 export const Details = () => {
   const [detail, useDetail] = React.useState({});
   const { id } = useParams();
