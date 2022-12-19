@@ -3,6 +3,7 @@ import { users } from "..";
 import img from "../img/imgNotFound.png";
 import { Link } from "react-router-dom";
 
+// afficher les favoris 
 export const Favoris = () => {
   const { me } = React.useContext(users);
   const [message, setMessage] = React.useState("");
