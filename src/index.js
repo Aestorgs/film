@@ -7,6 +7,7 @@ const root = document.getElementById('root')
 
 const app = createRoot(root)
 
+// afficher les composents
 app.render(
         <BrowserRouter>
           <Routes>
