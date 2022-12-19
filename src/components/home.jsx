@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { users } from "..";
 import "../css/style.css";
 import img from "../img/imgNotFound.png";
+
+// affichage de l'utilisateur 
 export const Home = () => {
   const [search, useSearch] = React.useState([]);
   const [values, useValues] = React.useState("");
