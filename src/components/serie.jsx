@@ -2,7 +2,7 @@ import React from "react";
 import img from "../img/imgNotFound.png";
 import { Link, useParams } from "react-router-dom";
 
-
+// afficher une serie 
 export const Serie = () => {
   const { id } = useParams();
   const [data, setData] = React.useState([]);
