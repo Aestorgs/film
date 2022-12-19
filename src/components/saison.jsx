@@ -2,6 +2,7 @@ import React from "react";
 import img from "../img/imgNotFound.png";
 import { Link, useParams } from "react-router-dom";
 
+// affichage pour les saisons 
 export const Saison = () => {
   const { id } = useParams();
   const [data, setData] = React.useState([]);
